@@ -1,6 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
+
+fetch='http://localhost:6001/plants'
+.then(json => json())
+.then
 
 function PlantCard() {
+  const [image, setImage] = useState("all");
+  const plantImages = props.image.map((image) => {}
   return (
     <li className="card">
       <img src={"https://via.placeholder.com/400"} alt={"plant name"} />
